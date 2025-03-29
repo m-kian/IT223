@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #ffb3d9; 
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ff99cc; 
+        }
+        .container {
+            max-width: 1400px;
+            margin: 80px auto;
+            display: flex;
+        }
+        .left-column, .middle-column, .right-column {
+            padding: 20px;
+        }
+        .left-column {
+            flex: 1;
+            background-color: #fff;
+            border: 1px solid #ff99cc; 
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .middle-column {
+            flex: 2;
+            background-color: #fff;
+            border: 1px solid #ff99cc; 
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .right-column {
+            flex: 1;
+            background-color: #fff;
+            border: 1px solid #ff99cc; 
+            border-radius: 8px;
+        }
+        .card {
+            background-color: #ffe6f2; 
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #ff99cc; 
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ffb3d9;
+        }
+        .tag {
+            background-color: #ffccf2;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+        footer {
+            background-color: #ffb3d9; 
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="#">Logo</a>
+    <a href="#" title="News"><i class="fa fa-globe"></i></a>
+    <a href="#" title="Account Settings"><i class="fa fa-user"></i></a>
+    <a href="#" title="Messages"><i class="fa fa-envelope"></i></a>
+    <a href="#" title="My Account">
+        <img src="c:\Users\User\AppData\Local\Temp\8f3f861c5e4387b091b3e1ac0b8fb159.jpg" class="circle" style="height:23px;width:23px" alt="Avatar">
+    </a>
+</div>
+
+<!-- Page Container -->
+<div class="container">
+    <!-- Left Column -->
+    <div class="left-column">
+        <div class="card">
+            <h4 class="center">My Profile</h4>
+            <p class="center"><img src="c:\Users\User\AppData\Local\Temp\a60229244e08b116ff29e388d116e920.jpg" class="circle" style="height:106px;width:106px" alt="Avatar"></p>
+            <hr>
+            <p><i class="fa fa-pencil fa-fw w3-margin-right"></i> Designer, UI</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right"></i> London, UK</p>
+            <p><i class="fa fa-birthday-cake fa-fw w3-margin-right"></i> April 1, 1988</p>
+        </div>
+        <br>
+        
+        <!-- Interests --> 
+        <div class="card">
+            <p>Interests</p>
+            <p>
+                <span class="tag">News</span>
+                <span class="tag">Labels</span>
+                <span class="tag">Games</span>
+                <span class="tag">Friends</span>
+                <span class="tag">Food</span>
+                <span class="tag">Design</span>
+                <span class="tag">Art</span>
+                <span class="tag">Photos</span>
+            </p>
+        </div>
+        <br>
+        
+        <!-- Alert Box -->
+        <div class="card">
+            <p><strong>Hey!</strong></p>
+            <p>People are looking at your profile. Find out who.</p>
+        </div>
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="middle-column">
+        <div class="card">
+            <h6>Status Update</h6>
+            <p contenteditable="true" class="border padding">Status: Feeling Blue</p>
+            <button type="button" class="button"><i class="fa fa-pencil"></i> Post</button> 
+        </div>
+        
+        <div class="card">
+            <img src="c:\Users\User\AppData\Local\Temp\33db813240d0a32f538a78383654c892.jpg" alt="Avatar" class="left circle margin-right" style="width:60px">
+            <span class="right opacity">1 min</span>
+            <h4>Tim</h4>
+            <hr class="clear">
+            <p>Life goes on and on.</p>
+            <button type="button" class="button"><i class="fa fa-thumbs-up"></i> Like</button> 
+            <button type="button" class="button"><i class="fa fa-comment"></i> Comment</button> 
+        </div>
+        
+        <div class="card">
+            <img src="c:\Users\User\AppData\Local\Temp\739701102489fe6f6f8a4337dd34b628.jpg" alt="Avatar" class="left circle margin-right" style="width:60px">
+            <span class="right opacity">16 min</span>
+            <h4>Your Mom</h4>
+            <hr class="clear">
+            <p>Heya World!.</p>
+            <button type="button" class="button"><i class="fa fa-thumbs-up"></i> Like</button> 
+            <button type="button" class="button"><i class="fa fa-comment"></i> Comment</button> 
+        </div>  
+    </div>
+    
+    <!-- Right Column -->
+    <div class="right-column">
+        <div class="card">
+            <p>Upcoming Events:</p>
+            <img src="c:\Users\User\AppData\Local\Temp\13b74bf24843d93abdf0a863bc4b4555.jpg" alt="Forest" style="width:100%;">
+            <p><strong>Holiday</strong></p>
+            <p>Friday 15:00</p>
+            <button class="button">Info</button>
+        </div>
+        <br>
+        
+        <div class="card">
+            <p>Friend Request</p>
+            <img src="c:\Users\User\AppData\Local\Temp\55779910b154af84174454f088110b3d.jpg" alt="Avatar" style="width:50%"><br>
+            <span>Elon Musk</span>
+            <div>
+                <button class="button" title="Accept"><i class="fa fa-check"></i></button>
+                <button class="button" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+        </div>
+        <br>
+        
+        <div class="card">
+            <p>ADS</p>
+        </div>
+        <br>
+        
+        <div class="card">
+            <p><i class="fa fa-bug w3-xxlarge"></i></p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <h5>Footer</h5>
+    <p>Gwapa kaayo si Kheanne.</p>
+</footer>
+
+<script>
+function openNav() {}
+</script>
+
+</body>
+</html>
